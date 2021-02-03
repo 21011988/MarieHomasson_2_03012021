@@ -1,0 +1,119 @@
+/* SECTION ORDI */
+.texte p {
+  margin-top: 10px;
+}
+
+.boutonrecherche {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.boutonrecherche i::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 32px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #f2f2f2;
+}
+
+.boutonrecherche button {
+  background-color: #0065fc;
+  color: white;
+  border: 0px #0065fc none;
+  border-radius: 0px 10px 10px 0px;
+  width: 100px;
+  height: 32px;
+}
+
+.boutonrecherche input {
+  width: 150px;
+  height: 30px;
+  border: 1px #f2f2f2 solid;
+  border-right: 0px solid;
+  text-align: center;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1; /* firefox */
+}
+
+::-webkit-input-placeholder {
+  /* safari, chrome */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  color: black; /* EI */
+}
+
+.boutonrecherche span i {
+  visibility: hidden;
+}
+
+/* SECTION TELEPHONE */
+@media all and (max-width: 767px) {
+  .boutonrecherche span i {
+    visibility: visible;
+    color: white;
+  }
+  .boutonrecherche span i::before {
+    background-color: #0065fc;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .boutonrecherche input {
+    border: 1px #f2f2f2 solid;
+    border-right: none;
+    width: 200px;
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  .boutonrecherche span button {
+    visibility: collapse;
+    border: none;
+    padding: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  .texte h2 {
+    padding-top: 20px;
+  }
+  .texte p {
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: larger;
+  }
+
+  .boutonrecherche {
+    margin-top: 20px;
+  }
+}
+/* SECTION TABLETTE */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .texte p {
+    font-size: larger;
+  }
+
+  .boutonrecherche input {
+    width: 150px;
+  }
+
+  .boutonrecherche button {
+    width: 120px;
+  }
+
+  .boutonrecherche {
+    margin-top: 20px;
+  }
+}
