@@ -1,0 +1,86 @@
+/* SECTION ORDI */
+
+.menuall {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.nav {
+  display: flex;
+  font-size: large;
+}
+
+.spacer {
+  margin: 20px;
+}
+
+.inscrire a {
+  text-decoration-line: none;
+  color: #0065fc;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.nav a {
+  color: grey;
+  text-decoration-line: none;
+}
+
+.nav a:visited {
+  color: grey;
+}
+
+.nav a:hover {
+  color: #0065fc;
+  border-top: 2px #0065fc solid;
+  padding-top: 10px;
+}
+
+/* SECTION TELEPHONE */
+@media all and (max-width: 767px) {
+  .nav {
+    order: 2;
+    width: 100%;
+    font-size: medium;
+  }
+
+  .navheber,
+  .navactivites {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .spacer {
+    margin: 0 20px;
+  }
+
+  .nav a:hover {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px #0065fc solid;
+    padding-top: none;
+    padding-bottom: 10px;
+  }
+
+  .inscrire a {
+    margin-right: 0px;
+    font-size: medium;
+  }
+}
+
+/* SECTION TABLETTE */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .nav {
+    font-size: medium;
+  }
+  .inscrire a {
+    font-size: medium;
+  }
+}
