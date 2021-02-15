@@ -49,6 +49,10 @@
   margin-top: 20px;
 }
 
+.info p {
+  font-size: large;
+}
+
 .info i::before {
   display: flex;
   align-items: center;
