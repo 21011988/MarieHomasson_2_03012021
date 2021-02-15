@@ -1,6 +1,5 @@
 /* SECTION ORDI */
 #activites {
-  width: 100%;
   border-radius: 10px;
 }
 
@@ -83,7 +82,7 @@
   padding-left: 5px;
   padding-bottom: 10px;
 }
-#activites h3 {
+#activites h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: large;
@@ -94,6 +93,9 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+  }
+  #activites h2 {
+    padding-left: 10px;
   }
 
   .groupe1,
@@ -109,7 +111,7 @@
 
   .grande img {
     height: 110px;
-    object-position: top;
+    object-position: center;
   }
 
   .petite1 img,
@@ -131,17 +133,18 @@
 
   .vignette {
     margin-bottom: 20px;
+    width: 90%;
   }
-  #activites h3 {
-    font-size: large;
-    font-weight: normal;
-  }
+
   .legende p {
     font-size: small;
   }
 }
 /* SECTION TABLETTE */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #activites {
+    padding: 10px;
+  }
   .groupe1,
   .groupe2 {
     margin-right: 0;

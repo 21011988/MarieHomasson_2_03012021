@@ -4,7 +4,7 @@
   height: 100px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  padding-top: 20px;
 }
 
 .logo {
@@ -28,7 +28,6 @@
 }
 
 .nav a {
-  color: grey;
   text-decoration-line: none;
 }
 
@@ -39,15 +38,20 @@
 .nav a:hover {
   color: #0065fc;
   border-top: 2px #0065fc solid;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 /* SECTION TELEPHONE */
 @media all and (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
   .nav {
     order: 2;
     width: 100%;
     font-size: medium;
+    border-bottom: 2px solid #f2f2f2;
   }
 
   .navheber,
@@ -59,14 +63,39 @@
 
   .spacer {
     margin: 0 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .nav a :visited {
+    color: black;
+    border-top: none;
+    border-bottom: none;
   }
 
   .nav a:hover {
     color: #0065fc;
     border-top: none;
+    padding-top: 0;
+  }
+
+  .navheber:hover {
+    border-top: none;
     border-bottom: 2px #0065fc solid;
-    padding-top: none;
-    padding-bottom: 10px;
+  }
+  .navactivites:hover {
+    border-top: none;
+    border-bottom: 2px #0065fc solid;
+  }
+  .navheber:visited {
+    border-bottom: none;
+  }
+  .navactivites:visited {
+    border-bottom: none;
+  }
+
+  .inscrire {
+    padding-top: 20px;
   }
 
   .inscrire a {
@@ -76,7 +105,10 @@
 }
 
 /* SECTION TABLETTE */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    padding: 10px;
+  }
   .nav {
     font-size: medium;
   }

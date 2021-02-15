@@ -24,7 +24,7 @@
 .boutonrecherche button {
   background-color: #0065fc;
   color: white;
-  border: 0px #0065fc none;
+  border: none;
   border-radius: 0px 10px 10px 0px;
   width: 100px;
   height: 32px;
@@ -41,9 +41,8 @@
 
 input::placeholder {
   color: black;
-  opacity: 1; /* firefox */
+  opacity: 1; /*firefox*/
 }
-
 ::-webkit-input-placeholder {
   /* safari, chrome */
   color: black;
@@ -59,6 +58,9 @@ input::placeholder {
 
 /* SECTION TELEPHONE */
 @media all and (max-width: 767px) {
+  .recherches {
+    padding: 10px;
+  }
   .boutonrecherche span i {
     visibility: visible;
     color: white;
@@ -86,13 +88,14 @@ input::placeholder {
     margin: 0;
   }
 
-  .texte h2 {
+  .texte h1 {
+    font-size: x-large;
     padding-top: 20px;
   }
   .texte p {
     margin-top: 10px;
     font-weight: lighter;
-    font-size: larger;
+    font-size: large;
   }
 
   .boutonrecherche {
@@ -100,7 +103,10 @@ input::placeholder {
   }
 }
 /* SECTION TABLETTE */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .recherches {
+    padding: 10px;
+  }
   .texte p {
     font-size: larger;
   }

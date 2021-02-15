@@ -33,10 +33,6 @@
   padding-right: 30px;
 }
 
-.populairesinfos h3 {
-  font-size: large;
-}
-
 .unite {
   border: 4px white solid;
   border-radius: 10px;
@@ -111,8 +107,7 @@
   margin-right: 20px;
 }
 
-#hebergements h3 {
-  font-size: large;
+#hebergements h2 {
   padding-top: 40px;
   margin-left: 20px;
   padding-bottom: 20px;
@@ -166,7 +161,7 @@
 }
 
 /* SECTION TELEPHONE */
-@media all and (max-device-width: 767px) {
+@media all and (max-width: 767px) {
   .containerlieux {
     flex-direction: column;
   }
@@ -182,10 +177,6 @@
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
-  }
-
-  .populairesinfos h3 {
-    font-weight: normal;
   }
 
   .populairesall {
@@ -229,8 +220,7 @@
     font-size: larger;
   }
 
-  #hebergements h3 {
-    font-weight: normal;
+  #hebergements h2 {
     padding-top: 20px;
     padding-left: 10px;
     margin-left: 0px;
@@ -242,7 +232,7 @@
 }
 
 /* SECTION TABLETTE */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .containerlieux {
     flex-direction: column;
   }
@@ -268,10 +258,6 @@
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .populairesinfos h3 {
-    font-weight: normal;
   }
 
   .unite {
@@ -300,6 +286,7 @@
     width: 100%;
     background-color: #f2f2f2;
     margin-bottom: 20px;
+    border-radius: 0;
   }
 
   .hebergementsall {
@@ -312,9 +299,8 @@
     padding-bottom: 20px;
   }
 
-  #hebergements h3 {
+  #hebergements h2 {
     padding-top: 20px;
-    font-weight: normal;
     margin-top: 0;
     margin-left: 0;
   }

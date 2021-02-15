@@ -69,6 +69,9 @@
 
 /* SECTION TELEPHONE */
 @media all and (max-width: 767px) {
+  .filtres {
+    padding: 10px;
+  }
   .filtresall {
     flex-wrap: wrap;
     padding-left: 0px;
@@ -85,7 +88,7 @@
   }
 
   .boutonfiltre {
-    margin-right: 5px;
+    margin-right: 30px;
     margin-bottom: 10px;
   }
 
@@ -93,11 +96,15 @@
     display: flex;
     flex-wrap: wrap;
     font-weight: lighter;
+    font-size: medium;
   }
 }
 
 /* SECTION TABLETTE */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .filtres {
+    padding: 10px;
+  }
   .filtresall {
     padding-left: 0px;
   }
