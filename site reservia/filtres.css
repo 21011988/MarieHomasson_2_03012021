@@ -24,6 +24,20 @@
   margin-right: 20px;
 }
 
+.economique button {
+  width: 100px;
+}
+
+.familial button {
+  width: 80px;
+}
+.romantique button {
+  width: 120px;
+}
+
+.animaux button {
+  width: 140px;
+}
 .boutonfiltre button {
   border: none;
   text-align: center;
